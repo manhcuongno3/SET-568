@@ -1,7 +1,7 @@
 const http = require('http');
 const { userRouter } = require('./routers/userRouter');
 
-const server = http.createServer((request, response) => {
+const server = http.createServer(function (request, response) {
     userRouter(request, response);
 });
 
